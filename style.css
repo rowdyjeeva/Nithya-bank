@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: aquamarine;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: #00ffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.logo {
+    font-size: 2em;
+    color: #fff;
+    user-select: none;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+}
+
+.navigation .btnLogin-popup {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    margin-left: 40px;
+    transition: -5s;
+}
+
+.navigation .btnLogin-popup:hover {
+    background: #fff;
+    color: #162938;
+}
+
+
+/* Custom normalize.css */
+
+html {
+    box-sizing: border-box;
+}
+
+html *,
+html *:before,
+html *:after,
+html *::before,
+html *::after {
+    box-sizing: inherit;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-weight: normal;
+    font-size: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+dl,
+dd,
+menu,
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-color: whitesmoke;
+    position: relative;
+}
+
+.slider {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    transition: all 0.5s;
+    overflow: hidden;
+}
+
+.slider .slide {
+    width: 20%;
+    height: 100%;
+    position: relative;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.slider .slide:nth-child(1) {
+    background: url("picture1_81.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.slider .slide:nth-child(2) {
+    background: url("56019816.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.slider .slide:nth-child(3) {
+    background: url("Women-empowerment-4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.slider .slide:nth-child(4) {
+    background: url("20240104_203739.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.slider .slide:nth-child(5) {
+    background: url("20240104_203719.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.slider .slide:hover {
+    width: 60%;
+    cursor: pointer;
+}
+
+.footer {
+    background-color: #00ffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
